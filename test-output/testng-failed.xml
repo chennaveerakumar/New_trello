@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="com.trello.testcase.TC_02">
+        <methods>
+          <include name="BoardOperation"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trello.testcase.TC_02 -->
+      <class name="com.trello.testcase.TC_01">
+        <methods>
+          <include name="loginMethod"/>
+          <include name="loginTrelloImg"/>
+          <include name="setUp"/>
+          <include name="loginTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trello.testcase.TC_01 -->
+      <class name="com.trello.testcase.TC_04">
+        <methods>
+          <include name="workspaceMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trello.testcase.TC_04 -->
+      <class name="com.trello.testcase.TC_03">
+        <methods>
+          <include name="ProfileMethod"/>
+          <include name="setUp"/>
+          <include name="profileTrelloImg"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.trello.testcase.TC_03 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
